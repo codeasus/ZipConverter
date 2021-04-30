@@ -5,13 +5,13 @@ import java.util.zip.ZipOutputStream;
 
 public class Main {
     public static void main(String[] args) {
-        String           sourcePathOne    = "D:\\Random\\One";
-        String           sourcePathTest   = "D:\\Random\\Test";
+        String            sourcePathOne  = "D:\\Random\\One";
+        String            sourcePathTest = "D:\\Random\\Test";
         try {
-            ZipController converterOne  = new ZipController(sourcePathOne);
-            ZipController converterTest = new ZipController(sourcePathTest);
-            String zipPathOne           = converterOne.convertSourceToZip();
-            String zipPathTest          = converterTest.convertSourceToZip();
+            ZipController converterOne   = new ZipController(sourcePathOne);
+            ZipController converterTest  = new ZipController(sourcePathTest);
+            String        zipPathOne     = converterOne.convertSourceToZip();
+            String        zipPathTest    = converterTest.convertSourceToZip();
             System.out.println(zipPathOne);
             System.out.println(zipPathTest);
         }

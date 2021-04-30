@@ -32,9 +32,9 @@ public class ZipSource {
         }
         FileInputStream fileInput = new FileInputStream(sourceFile);
         ZipEntry         zipEntry = new ZipEntry(fileName);
+        byte[]              bytes = new byte[1024];
+        int                length;
         destinationZipPath.putNextEntry(zipEntry);
-        byte[] bytes = new byte[1024];
-        int length;
         while ((length = fileInput.read(bytes)) >= 0) {
             destinationZipPath.write(bytes, 0, length);
         }

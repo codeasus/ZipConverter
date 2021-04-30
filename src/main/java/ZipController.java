@@ -10,7 +10,6 @@ public class ZipController {
     private  FileOutputStream zipFilePath        = null;
     private  ZipOutputStream  destinationZipPath = null;
     private  String           zipPath            = null;
-//    private  boolean          zipExecutionStatus = false;
 
     public  ZipController(String sourcePath) throws IOException {
         sourceFile         = new File(sourcePath);
