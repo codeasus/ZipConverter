@@ -25,13 +25,13 @@ public class Main {
             List<String> oneZip = ZipController.getZipContents(zipPathOne);
             System.out.println(oneZip.toString());
 
-//            Example test for the source One
+//            Example test for the source Test
             List<String> test    = ZipController.getSourceContents(sourcePathTest);
             System.out.println(test.toString());
             List<String> testZip = ZipController.getZipContents(zipPathTest);
             System.out.println(testZip.toString());
 
-//            Example test for the source One
+//            Example test for the source covid.txt
             List<String> covid    = ZipController.getSourceContents(sourcePathCovid);
             System.out.println(covid.toString());
             List<String> covidZip = ZipController.getZipContents(zipPathCovid);
