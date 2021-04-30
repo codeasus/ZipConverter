@@ -13,9 +13,9 @@ public class ZipSource {
    */
     private ZipSource() {}
 
-    public static void sourceToZipObject(File sourceFile, String fileName, ZipOutputStream destinationZipPath) throws IOException {
+    public static boolean sourceToZipObject(File sourceFile, String fileName, ZipOutputStream destinationZipPath) throws IOException {
         if (sourceFile.isHidden()) {
-            return;
+            return false;
         }
         if (sourceFile.isDirectory()) {
             if (fileName.endsWith("/")) {
@@ -28,7 +28,7 @@ public class ZipSource {
             for (File file : sourceContents) {
                 sourceToZipObject(file, fileName + "/" + file.getName(), destinationZipPath);
             }
-            return;
+            return true;
         }
         FileInputStream fileInput = new FileInputStream(sourceFile);
         ZipEntry         zipEntry = new ZipEntry(fileName);
@@ -39,5 +39,6 @@ public class ZipSource {
             destinationZipPath.write(bytes, 0, length);
         }
         fileInput.close();
+        return true;
     }
 }
