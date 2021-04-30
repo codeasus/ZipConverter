@@ -19,7 +19,8 @@ public class ZipController {
 
     public ZipController(String sourcePath) throws IOException {
         sourceFile         = new File(sourcePath);
-        zipPath            = String.format("%s\\%s", sourceFile.getParent(), (sourceFile.getName() + "Compressed.zip"));
+        zipPath            = sourceFile.isFile()?String.format("%s\\%s", sourceFile.getParent(), (sourceFile.getName().split("\\.")[0] + "Compressed.zip")):
+                                                 String.format("%s\\%s", sourceFile.getParent(), (sourceFile.getName() + "Compressed.zip"));
         zipFilePath        = new FileOutputStream(zipPath);
         destinationZipPath = new ZipOutputStream(zipFilePath);
     }
@@ -34,7 +35,7 @@ public class ZipController {
         destinationZipPath.close();
         zipFilePath.close();
         if(zipExecutionStatus) {
-            System.out.println("[UPDATE] : Execution is finished");
+            System.out.printf("[UPDATE] ==> %s: Execution is finished%n", sourceFile.getName());
             return zipPath;
         }
         return "";
