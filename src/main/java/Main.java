@@ -5,15 +5,16 @@ import java.util.zip.ZipOutputStream;
 
 public class Main {
     public static void main(String[] args) {
-        String           sourcePath    = "D:\\Random\\Interview\\One";
+        String           sourcePath    = "D:\\Random\\One";
         try {
 
-            ZipController converter   = new ZipController(sourcePath);
-            converter.displayContent();
+//            ZipController converter   = new ZipController(sourcePath);
+//            converter.displayContent();
 //            converter.convertSourceToZip();
 //            converter.cleanUp();
 
-//            convertSourceToZip(sourcePath);
+            String convertedZipPath = convertSourceToZip(sourcePath);
+            System.out.println(convertedZipPath);
 
         }
         catch (IOException ex) {
