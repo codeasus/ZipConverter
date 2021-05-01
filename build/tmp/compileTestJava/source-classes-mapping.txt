@@ -1,0 +1,2 @@
+StructureEqualityTest.java
+ StructureEqualityTest

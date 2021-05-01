@@ -1,6 +1,6 @@
-ZipSource.java
- ZipSource
-ZipController.java
- ZipController
-Main.java
- Main
+org/example/ZipSource.java
+ org.example.ZipSource
+org/example/ZipController.java
+ org.example.ZipController
+org/example/Main.java
+ org.example.Main
