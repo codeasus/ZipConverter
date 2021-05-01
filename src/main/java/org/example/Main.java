@@ -12,6 +12,6 @@ public class Main {
             sourcePath = scanner.nextLine();
         }
         ZipController inputConversion = new ZipController(sourcePath);
-        inputConversion.convertSourceToZip();
+        System.out.println("Generated zip path : " + inputConversion.convertSourceToZip());
     }
 }
