@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StructureEqualityTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-01T00:26:41" hostname="DEVICEXSERVER" time="0.087">
+<testsuite name="StructureEqualityTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-01T16:11:27" hostname="DEVICEXSERVER" time="0.098">
   <properties/>
   <testcase name="Test a minimal test case." classname="StructureEqualityTest" time="0.017"/>
-  <testcase name="Test equality of the source structure with the structure of the generated zip file." classname="StructureEqualityTest" time="0.069"/>
+  <testcase name="Test equality of the source structure with the structure of the generated zip file." classname="StructureEqualityTest" time="0.08"/>
   <system-out><![CDATA[[UPDATE] ==> One: Execution is finished
 [UPDATE] ==> Two: Execution is finished
 [UPDATE] ==> Test: Execution is finished

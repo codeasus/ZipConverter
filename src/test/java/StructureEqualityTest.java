@@ -6,12 +6,12 @@ import java.io.IOException;
 
 
 public class StructureEqualityTest {
-    private final String   sourcePathOne = "D:\\Random\\One";
-    private final String   sourcePathTwo = "D:\\Random\\Two";
-    private final String  sourcePathTest = "D:\\Random\\Test";
-    private final String sourcePathCovid = "D:\\Random\\covid.txt";
+    private final String   sourcePathOne = "D:\\Random\\Files\\One";
+    private final String   sourcePathTwo = "D:\\Random\\Files\\Two";
+    private final String  sourcePathTest = "D:\\Random\\Files\\Test";
+    private final String sourcePathCovid = "D:\\Random\\Files\\covid.txt";
 
-    private final String imposterPathOne = "D:\\Random\\Files\\One";
+    private final String imposterPathOne = "D:\\Random\\Files\\Special\\One";
 
     @Test
     @DisplayName("Test a minimal test case.")
